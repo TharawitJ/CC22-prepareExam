@@ -1,5 +1,5 @@
 import useUserStore from "../store/userStore";
-
+// this work as storage
 function Profile() {
   // state.user ~ useUserStore.user
   const user = useUserStore((state) => state.user);
