@@ -21,11 +21,12 @@ export default function Register() {
     const { name, value } = evt.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
+  console.log(formData);
 
   const hdlSubmit = async (evt) => {
     evt.preventDefault();
     const toValidate = registerValidator.safeParse(formData);
-    // setError({})
+    setError({})
 
     if (!toValidate.success) {
       setError(toValidate.error.flatten().fieldErrors);
@@ -43,7 +44,6 @@ export default function Register() {
     }
   };
 
-  console.log(error);
 
   return (
     <>
