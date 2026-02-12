@@ -8,7 +8,6 @@ function App() {
     <>
       <ToastContainer position="bottom-right" />
       <RouterProvider router={router} />
-      <hr />
     </>
   );
 }
