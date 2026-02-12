@@ -1,0 +1,16 @@
+import React from "react";
+import { RouterProvider } from "react-router";
+import router from "./router/index";
+import { ToastContainer } from "react-toastify";
+
+function App() {
+  return (
+    <>
+      <ToastContainer position="bottom-right" />
+      <RouterProvider router={router} />
+      <hr />
+    </>
+  );
+}
+
+export default App;
